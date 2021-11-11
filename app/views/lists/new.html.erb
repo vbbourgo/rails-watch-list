@@ -1,0 +1,24 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="http://localhost:3000/lists">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCI1WpcRhanpmWu9HyiAKNFvLH-NIbuXXpyuuHH1FUdAp2SG5--_pOnoiMz9klyOQdjA&usqp=CAU" />
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:3000/lists">My lists</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/lists/new">New lists</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<h1>Create a new list</h1>
+<%= render "form", list: @list %>
+
+<%= link_to 'Back', lists_path %> |

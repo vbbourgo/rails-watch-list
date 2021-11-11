@@ -1,0 +1,31 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="http://localhost:3000/lists">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCI1WpcRhanpmWu9HyiAKNFvLH-NIbuXXpyuuHH1FUdAp2SG5--_pOnoiMz9klyOQdjA&usqp=CAU" />
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">My lists</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/lists/new">New lists</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.pinimg.com/736x/4b/ed/36/4bed369e3d0341b40dbb46d7b97076e2.jpg);">
+  <div class="container">
+    <h1>Save any kind of movies ! </h1>
+  </div>
+</div>
+
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+  <% end %>
